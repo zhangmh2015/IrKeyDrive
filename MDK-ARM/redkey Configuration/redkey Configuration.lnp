@@ -1,0 +1,27 @@
+--cpu Cortex-M0
+"redkey configuration\stm32f0xx_hal_rcc.o"
+"redkey configuration\stm32f0xx_hal_flash.o"
+"redkey configuration\stm32f0xx_hal_flash_ex.o"
+"redkey configuration\stm32f0xx_hal_pwr_ex.o"
+"redkey configuration\stm32f0xx_hal_gpio.o"
+"redkey configuration\stm32f0xx_hal_rcc_ex.o"
+"redkey configuration\stm32f0xx_hal_dma.o"
+"redkey configuration\stm32f0xx_hal_tim_ex.o"
+"redkey configuration\stm32f0xx_hal_tim.o"
+"redkey configuration\stm32f0xx_hal.o"
+"redkey configuration\stm32f0xx_hal_pwr.o"
+"redkey configuration\stm32f0xx_hal_cortex.o"
+"redkey configuration\stm32f0xx_hal_uart_ex.o"
+"redkey configuration\stm32f0xx_hal_uart.o"
+"redkey configuration\stm32f0xx_hal_adc.o"
+"redkey configuration\stm32f0xx_hal_adc_ex.o"
+"redkey configuration\system_stm32f0xx.o"
+"redkey configuration\stm32f0xx_it.o"
+"redkey configuration\stm32f0xx_hal_msp.o"
+"redkey configuration\main.o"
+"redkey configuration\startup_stm32f030x8.o"
+--library_type=microlib --strict --scatter "redkey Configuration\redkey Configuration.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "redkey Configuration.map" -o "redkey Configuration\redkey Configuration.axf"
